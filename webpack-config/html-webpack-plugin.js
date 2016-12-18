@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require( 'html-webpack-plugin' );
 
 const html_webpack_plugin = new HtmlWebpackPlugin( {
-	template: './src/public/index.html',
+	template: './public/index.html',
 	chunksSortMode: 'dependency'
 } );
 
