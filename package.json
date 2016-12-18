@@ -30,7 +30,7 @@
 	},
 	"scripts": {
 		"clean": "rimraf dist",
-		"dev": "npm run clean && webpack-dev-server",
+		"dev": "npm run clean && NODE_ENV=dev webpack-dev-server",
 		"build:prod": "npm run clean && webpack"
 	}
 }
