@@ -1,3 +1,4 @@
+'use strict';
 const path = require('path');
 const webpack = require('webpack');
 // loaders
@@ -63,13 +64,13 @@ case 'dist':
 	addToPlugins(
     new WebpackMd5Hash(),
     new ManifestPlugin(),
-    require('./webpack-config/chunk-manifest-webpack-plugin'),
-    new webpack.optimize.UglifyJsPlugin()
+    require('./webpack-config/chunk-manifest-webpack-plugin')
   );
 
 	addToWebpack('devtool','source-map');
 
 	if (process.env.npm_lifecycle_event === 'prod') {
+		//addToPlugins(new webpack.optimize.UglifyJsPlugin());
 		addToWebpack('devServer', require( './webpack-config/dev-server' ));
 		webpack_config.devServer.hot = false;
 	}

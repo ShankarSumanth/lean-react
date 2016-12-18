@@ -6,8 +6,10 @@
 	"author": "Sumanth Shankar",
 	"license": "MIT",
 	"dependencies": {
+		"express": "^4.14.0",
 		"react": "^15.4.1",
-		"react-dom": "^15.4.1"
+		"react-dom": "^15.4.1",
+		"react-router": "^3.0.0"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.18.0",
@@ -34,7 +36,7 @@
 	"scripts": {
 		"clean": "rimraf dist",
 		"dev": "npm run clean && NODE_ENV=development webpack-dev-server",
-		"prod": "npm run clean && NODE_ENV=production webpack-dev-server",
+		"prod": "npm run clean && NODE_ENV=production webpack-dev-server -p",
 		"dist": "npm run clean && NODE_ENV=production webpack -p"
 	}
 }
