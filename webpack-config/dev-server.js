@@ -9,7 +9,7 @@ module.exports = {
 		hash: false,
 		version: false,
 		timings: false,
-		assets: false,
+		assets: true,
 		chunks: false,
 		modules: false,
 		errors: true,
@@ -17,4 +17,4 @@ module.exports = {
 		warnings: false,
 		publicPath: false
 	}
-}
+};
