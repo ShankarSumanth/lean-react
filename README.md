@@ -29,7 +29,7 @@ Package                      | Brief Description            | Why
 [React](https://facebook.github.io/react/)| the react ui library | --|
 [Redux](http://redux.js.org/) | simplifies application state management | Helps in predectible state, once the application starts growing. Initially this is not required, but when your application grows into multiple components, then redux makes it easy to handle state|
 [React-Hot-Loader](http://gaearon.github.io/react-hot-loader/)| See component changes without browser refresh| During development, it is very common to make lot of changes to components, and waiting for a whole build to see the changes makes development inefficient. By reloading the changed component instantaneously without waiting for a whole build/browser refresh. Use this with webpack dev server and it makes configuration very simple|
-[Babe](https://babeljs.io/)| Transpile new js language features| Allows to use next gen javascript features today. Helps keep up with the js eco-system, without waiting for an official support from browsers etc.|
+[Babel](https://babeljs.io/)| Transpile new js language features| Allows to use next gen javascript features today. Helps keep up with the js eco-system, without waiting for an official support from browsers etc.|
 
 ### Project Structure
  All the component related code should go under the  `src/components` folder and uses domain naming convention. For eg: 
